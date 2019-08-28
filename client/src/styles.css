@@ -1,0 +1,115 @@
+.white {
+    color: #fff;
+}
+
+.filler {
+    flex-grow: 1;
+}
+
+/* Slide Menu Styles */
+
+.modal.left .modal-dialog,  .modal-dialog {
+    position: fixed;
+    margin: auto;
+    width: 320px;
+    height: 100%;
+    -webkit-transform: translate3d(0%, 0, 0);
+    -ms-transform: translate3d(0%, 0, 0);
+    -o-transform: translate3d(0%, 0, 0);
+    transform: translate3d(0%, 0, 0);
+    
+}
+
+.modal.left .modal-content {
+    height: 100%;
+    overflow-y: none;
+    border-radius: 0;
+    border: none;
+}
+
+.modal.left .modal-header {
+    height: 56px;
+    min-height: 56px;
+    padding: 15px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+}
+
+.modal.left .modal-header a {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    font-weight: 200;
+    line-height: inherit;
+    white-space: nowrap;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal.left .modal-header a:hover {
+    color: #fff;
+}
+
+.modal.left .modal-body {
+    margin: 0;
+    padding: 0;
+    border-radius: 0 !important;
+    min-height: 200px;
+    overflow-y: auto;
+}
+
+.modal.left .modal-footer {
+    height: 56px;
+    min-height: 56px;
+    padding: 15px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    justify-content: flex-start !important;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 200;
+}
+
+.modal.left .modal-footer a {
+    cursor: pointer;
+}
+
+/* Left fade transition */
+.modal.left.fadeit .modal-dialog {
+    left: -320px;
+    -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+    -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+    transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+	
+.modal.left.fadeit.in .modal-dialog {
+    left: 0;
+}
+
+.menu-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-nav li {
+    width: 100%;
+    line-height: 32px;
+    padding: 10px;
+    overflow-x: hidden;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.menu-nav li:hover {
+    background-color: #d9d9d9;
+}
+
+.menu-nav li i{
+    line-height: 32px !important;
+}
+
