@@ -1,3 +1,17 @@
+/** *******************************************************
+ **  Custom Bootstrap Theming Section
+ ** ******************************************************/
+
+$theme-colors: (
+    "dark": #014358
+  );
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+/** *******************************************************
+ **  Misc Section
+ ** ******************************************************/
+
 .white {
     color: #fff;
 }
@@ -7,8 +21,7 @@
 }
 
 /* Slide Menu Styles */
-
-.modal.left .modal-dialog,  .modal-dialog {
+.modal.left .modal-dialog {
     position: fixed;
     margin: auto;
     width: 320px;
@@ -61,6 +74,12 @@
     overflow-y: auto;
 }
 
+.modal.left .modal-body .navbar { 
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
 .modal.left .modal-footer {
     height: 56px;
     min-height: 56px;
@@ -78,23 +97,31 @@
     cursor: pointer;
 }
 
-/* Left fade transition */
-.modal.left.fadeit .modal-dialog {
+/* Modal Slide Effect */
+.modal.left.fade .modal-dialog{
     left: -320px;
     -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
-    -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
-    -o-transition: opacity 0.3s linear, left 0.3s ease-out;
-    transition: opacity 0.3s linear, left 0.3s ease-out;
+       -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+         -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+            transition: opacity 0.3s linear, left 0.3s ease-out;
 }
-	
-.modal.left.fadeit.in .modal-dialog {
+
+.modal.left.fade.show .modal-dialog{
     left: 0;
 }
+
+
+
+
+
+
+
 
 .menu-nav {
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 .menu-nav li {
@@ -111,5 +138,9 @@
 
 .menu-nav li i{
     line-height: 32px !important;
+}
+
+.nav-link-head i {
+    margin-right: 10px;
 }
 

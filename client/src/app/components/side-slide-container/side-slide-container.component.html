@@ -1,0 +1,49 @@
+<div class="modal left fade" id="menu-left" tabindex="-1" role="dialog" aria-labelledby="leftSideMenu" >
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            
+            <div class="modal-header bg-dark">
+                <a data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i> Close Menu</a>
+            </div>
+
+            <div class="modal-body">
+                <nav class="navbar bg-light">
+                    <ul class="menu-nav">
+                        <li class="d-flex justify-content-between">
+                            <span class="nav-link-head">
+                                <i class="fa fa-home"></i>
+                                <a>Link 1</a>
+                            </span>
+                            <span class="nav-link-tail">
+                                <i class="fa fa-chevron-right"></i>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="nav-link-head">
+                                <i class="fa fa-star"></i>
+                                <a>Link 2</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="nav-link-head">
+                                <i class="fa fa-star"></i>
+                                <a>Link 2</a>
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Will add back after I figure out how I want to make the menus work.
+                <nav class="navbar bg-light">
+                    <app-menu #menu [menuItems]="navMenu"></app-menu>
+                </nav>
+                --> 
+            </div>
+
+            <div class="modal-footer bg-dark">
+                <a data-dismiss="modal" aria-label="Sign Out"><i class="fa fa-power-off"></i> Sign Out</a>
+                <span class="filler"></span>
+                <a data-dismiss="modal" aria-label="Sign Out"><i class="fa fa-ticket"></i> Support Ticket</a>
+            </div>
+        </div><!-- modal-content -->
+    </div><!-- modal-dialog -->
+</div><!-- modal -->
